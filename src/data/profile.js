@@ -1,6 +1,6 @@
 const profile = {
   name: "Nabi Hossen",
-  title: "Founder & CEO",
+  position: "Founder & CEO",
 
   company: "NITS Computer Training Institute",
   tagline: "Start IT - Grow Your Skills - Be Confident in Your Career",

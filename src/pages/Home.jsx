@@ -1,15 +1,18 @@
-import profile from "../data/profile";
+import "../styles/home.css";
+import Header from "../components/Header";
+import ProfileCard from "../components/ProfileCard";
+import ActionButtons from "../components/ActionButtons";
 
 function Home() {
   return (
     <main>
-      <h1>{profile.name}</h1>
 
-      <h2>{profile.title}</h2>
+      <Header />
 
-      <p>{profile.company}</p>
+      <ProfileCard />
 
-      <p>{profile.tagline}</p>
+      <ActionButtons />
+
     </main>
   );
 }
