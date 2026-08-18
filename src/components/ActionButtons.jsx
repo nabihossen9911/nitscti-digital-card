@@ -1,3 +1,4 @@
+import { downloadVCard } from "../utils/vcard";
 import profile from "../data/profile";
 
 import {
@@ -71,6 +72,15 @@ function ActionButtons() {
         <FiMapPin />
         <span>Location</span>
       </a>
+
+    
+     <button
+      className="action-btn"
+      onClick={downloadVCard}
+      type="button"
+      >
+        Save Contact
+      </button>
 
     </section>
   );

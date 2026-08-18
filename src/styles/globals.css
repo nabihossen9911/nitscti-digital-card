@@ -28,7 +28,11 @@ body{
 
     font-family:Poppins,sans-serif;
 
-    background:var(--bg);
+    background:
+    linear-gradient(
+    180deg,
+    #f8fbff 0%,
+    #eef8fd 100%);
 
     color:var(--text);
 }

@@ -1,5 +1,5 @@
 main {
-  max-width: 420px;
+  width: min(100%, 440px);
   margin: 40px auto;
   padding: 20px;
 }
@@ -10,83 +10,72 @@ main {
   margin-bottom: 25px;
 }
 
-.logo {
-  width: 170px;
-  height: 170px;
-  object-fit: contain;
-  border-radius: 50%;
-  background: #fff;
-  padding: 10px;
-  border: 4px solid var(--primary);
-  box-shadow: var(--shadow);
+.logo{
+  width:140px;
+  height:140px;
+  object-fit:contain;
+  background:#fff;
+  border:5px solid var(--primary);
+  border-radius:50%;
+  padding:12px;
+  box-shadow:
+  0 12px 30px rgba(25,158,220,.18);
 }
-
 .profile-card {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 28px 20px;
+  margin-top:20px;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:32px 24px;
   text-align: center;
-  box-shadow: var(--shadow);
+  box-shadow:
+  0 15px 40px rgba(15,23,42,.08);
+}
+.profile-card h1{
+  font-size:2rem;
+  font-weight:700;
+  letter-spacing:.3px;
 }
 
-.profile-card h1 {
-  font-size: 2rem;
-  color: var(--heading);
-  margin-bottom: 8px;
+.profile-card h2{
+  color:var(--primary);
+  font-size:1rem;
+  font-weight:600;
+  margin:10px 0;
 }
 
-.profile-card h2 {
-  color: var(--primary);
-  font-size: 1.15rem;
-  margin-bottom: 10px;
+.profile-card h3{
+  font-size:1.1rem;
+  margin-bottom:14px;
 }
 
-.profile-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 12px;
-}
-
-.profile-card p {
-  color: var(--text);
-  line-height: 1.7;
+.profile-card p{
+  max-width:290px;
+  margin:auto;
+  line-height:1.8;
 }
 .actions {
   margin-top: 24px;
-
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
-
   gap: 14px;
 }
 
 .action-btn {
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   gap: 10px;
-
   padding: 16px;
-
   text-decoration: none;
-
   color: var(--white);
-
   background: var(--primary);
-
   border-radius: 16px;
-
   font-weight: 600;
-
   font-size: .95rem;
-
   box-shadow: var(--shadow);
-
   transition: all .30s ease;
+  box-shadow: 0 8px 20px rgba(25,158,220,.18);
 }
 
 .action-btn svg {
@@ -95,8 +84,42 @@ main {
 
 .action-btn:hover {
   background: var(--primary-dark);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgba(25,158,220,.25);
+}
 
-  transform: translateY(-3px);
+.courses {
+  margin-top: 28px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
 
-  box-shadow: 0 18px 35px rgba(25,158,220,.20);
+.courses h3 {
+  text-align: center;
+  color: var(--heading);
+  margin-bottom: 16px;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.course-chip {
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #eaf7fd;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.actions button {
+  border: none;
+  cursor: pointer;
+  font: inherit;
 }
