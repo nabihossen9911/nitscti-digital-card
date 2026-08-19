@@ -1,0 +1,17 @@
+{
+  "name": "NITS Digital Business Card",
+  "short_name": "NITS Card",
+  "description": "Official Digital Business Card of Nabi Hossen",
+  "start_url": "/card/nabihossen",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#199edc",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

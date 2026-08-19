@@ -1,6 +1,6 @@
 import QRCodeCard from "../components/QRCodeCard";
 import Footer from "../components/Footer";
-import CourseChips from "../components/CourseChips";
+import CourseChips from "../components/courseChips";
 import "../styles/home.css";
 import Header from "../components/Header";
 import ProfileCard from "../components/ProfileCard";
