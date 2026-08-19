@@ -14,6 +14,8 @@ const profile = {
 
   facebook: "https://facebook.com/nitscti",
 
+  youtube: "https://www.youtube.com/@nitscti",
+
   address: "Borabo Bazar, Jatramura, Rupganj, Narayanganj",
 
   maps: "https://maps.google.com/?q=PGH9+9GR+Borabo",

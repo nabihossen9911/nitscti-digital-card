@@ -1,3 +1,5 @@
+import QRCodeCard from "../components/QRCodeCard";
+import Footer from "../components/Footer";
 import CourseChips from "../components/CourseChips";
 import "../styles/home.css";
 import Header from "../components/Header";
@@ -15,6 +17,10 @@ function Home() {
       <ActionButtons />
 
       <CourseChips />
+      
+      <QRCodeCard />
+      
+      <Footer />
 
     </main>
   );

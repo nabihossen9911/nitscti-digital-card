@@ -1,87 +1,38 @@
-import { downloadVCard } from "../utils/vcard";
-import profile from "../data/profile";
-
-import {
-  FaPhoneAlt,
-  FaWhatsapp,
-  FaFacebookF,
-} from "react-icons/fa";
-
-import {
-  FiGlobe,
-  FiMail,
-  FiMapPin,
-} from "react-icons/fi";
+import actions from "../data/actions";
 
 function ActionButtons() {
   return (
     <section className="actions">
+      {actions.map((item) => {
+        const Icon = item.icon;
 
-      <a
-        href={`tel:${profile.phone}`}
-        className="action-btn"
-      >
-        <FaPhoneAlt />
-        <span>Call</span>
-      </a>
+        if (item.href) {
+          return (
+            <a
+              key={item.label}
+              className="action-btn"
+              href={item.href}
+              target={item.href.startsWith("http") ? "_blank" : undefined}
+              rel="noopener noreferrer"
+            >
+              {Icon && <Icon />}
+              <span>{item.label}</span>
+            </a>
+          );
+        }
 
-      <a
-        href={`https://wa.me/${profile.whatsapp}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="action-btn"
-      >
-        <FaWhatsapp />
-        <span>WhatsApp</span>
-      </a>
-
-      <a
-        href={profile.website}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="action-btn"
-      >
-        <FiGlobe />
-        <span>Website</span>
-      </a>
-
-      <a
-        href={`mailto:${profile.email}`}
-        className="action-btn"
-      >
-        <FiMail />
-        <span>Email</span>
-      </a>
-
-      <a
-        href={profile.facebook}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="action-btn"
-      >
-        <FaFacebookF />
-        <span>Facebook</span>
-      </a>
-
-      <a
-        href={profile.maps}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="action-btn"
-      >
-        <FiMapPin />
-        <span>Location</span>
-      </a>
-
-    
-     <button
-      className="action-btn"
-      onClick={downloadVCard}
-      type="button"
-      >
-        Save Contact
-      </button>
-
+        return (
+          <button
+            key={item.label}
+            className="action-btn"
+            type="button"
+            onClick={item.action}
+          >
+            {Icon && <Icon />}
+            <span>{item.label}</span>
+          </button>
+        );
+      })}
     </section>
   );
 }
