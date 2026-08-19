@@ -1,5 +1,9 @@
 const profile = {
   name: "Nabi Hossen",
+
+  firstName: "Nabi",
+  lastName: "Hossen",
+
   position: "Founder & CEO",
 
   company: "NITS Computer Training Institute",
