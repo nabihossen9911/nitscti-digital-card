@@ -20,7 +20,7 @@ const profile = {
   youtube: "https://www.youtube.com/@nitscti",
 
   // Address
-  address: "Borabo Bazar, Jatramura, Rupganj, Narayanganj",
+  address: "Borabo, Tarabo Municipality, Rupganj, Narayanganj",
   maps: "https://maps.google.com/?q=PGH9+9GR+Borabo",
 
   // Popular Courses

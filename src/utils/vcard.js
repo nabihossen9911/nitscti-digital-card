@@ -2,6 +2,10 @@ import logoBase64 from "../data/logoBase64";
 import profile from "../data/profile";
 
 export function downloadVCard() {
+
+  // Fold Base64 প্রতি 75 character পরপর
+  const photo = logoBase64.match(/.{1,75}/g).join("\r\n ");
+
   const vcard = `
 BEGIN:VCARD
 VERSION:3.0
@@ -10,11 +14,12 @@ FN:${profile.name}
 ORG:${profile.company}
 TITLE:${profile.position}
 NOTE:${profile.tagline}
-TEL;TYPE=CELL,VOICE:${profile.phone}
+TEL;TYPE=CELL:${profile.phone}
 EMAIL;TYPE=INTERNET:${profile.email}
 URL:${profile.website}
 ADR;TYPE=WORK:;;${profile.address};;;;Bangladesh
-PHOTO;ENCODING=b;TYPE=PNG:${logoBase64}
+PHOTO;ENCODING=BASE64;TYPE=PNG:
+ ${photo}
 END:VCARD
 `.trim();
 
