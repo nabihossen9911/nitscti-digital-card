@@ -1,3 +1,4 @@
+import toast from "react-hot-toast";
 import logoBase64 from "../data/logoBase64";
 import profile from "../data/profile";
 
@@ -35,6 +36,7 @@ END:VCARD
 
   document.body.appendChild(link);
   link.click();
+  toast.success("Contact download started");
   document.body.removeChild(link);
 
   URL.revokeObjectURL(url);
