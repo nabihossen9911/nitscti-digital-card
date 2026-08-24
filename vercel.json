@@ -3,6 +3,10 @@
     {
       "source": "/card/nabihossen",
       "destination": "/"
+    },
+    {
+      "source": "/card/nabihossen/",
+      "destination": "/"
     }
   ]
 }
