@@ -1,6 +1,7 @@
 import { shareCard } from "../utils/share";
 import { downloadVCard } from "../utils/vcard";
 import profile from "../data/profile";
+
 import {
   FaPhoneAlt,
   FaWhatsapp,
@@ -11,8 +12,7 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
-import { FiShare2 } from "react-icons/fi";
-
+import { FiShare2, FiCopy } from "react-icons/fi";
 
 const actions = [
   {
@@ -58,6 +58,23 @@ const actions = [
     label: "Share Card",
     icon: FiShare2,
     action: shareCard,
+  },
+
+  // v1.1
+  {
+    label: "Copy Phone",
+    icon: FiCopy,
+    copy: profile.phone,
+  },
+  {
+    label: "Copy Email",
+    icon: FiCopy,
+    copy: profile.email,
+  },
+  {
+    label: "Copy Website",
+    icon: FiCopy,
+    copy: profile.website,
   },
 ];
 
