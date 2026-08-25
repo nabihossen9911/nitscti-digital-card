@@ -1,12 +1,17 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
       "source": "/card/nabihossen",
-      "destination": "/"
+      "destination": "/index.html"
     },
     {
       "source": "/card/nabihossen/",
-      "destination": "/"
+      "destination": "/index.html"
+    },
+    {
+      "source": "/card/nabihossen/:path*",
+      "destination": "/:path*"
     }
   ]
 }
