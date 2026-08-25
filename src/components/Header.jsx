@@ -1,28 +1,11 @@
-// function Header() {
-//   return (
-//     <header className="header">
-//       <img
-//         src="/images/logo.png"
-//         alt="NITS Logo"
-//         className="logo"
-//       />
-//     </header>
-//   );
-// }
-
-// export default Header;
-
-
-
-
-import logo from "/icons/icons.svg";
+import banner from "../assets/images/banner.jpg";
+import logo from "../assets/images/logo.png";
 
 function Header() {
   return (
     <header className="header">
-
       <div className="banner">
-        <img src="/images/banner.jpg" alt="NITS Banner" />
+        <img src={banner} alt="NITS Banner" />
       </div>
 
       <div className="logo-wrapper">
@@ -32,7 +15,6 @@ function Header() {
           className="logo"
         />
       </div>
-
     </header>
   );
 }
